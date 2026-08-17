@@ -1,0 +1,2465 @@
+{
+  "_metadata": {
+    "version": "2026-07-23-state-based",
+    "description": "以 world(1).geojson 為地圖母表；美國改採州級互惠判定。新加坡因原 GeoJSON 未含 SGP，列入資料庫但目前沒有對應世界圖形。",
+    "officialSource": "臺中市中山地政事務所轉載之內政部互惠國家一覽表，最後更新 2026-07-23"
+  },
+  "TWN": {
+    "countryZh": "臺灣",
+    "countryEn": "Taiwan",
+    "status": "self",
+    "color": "#9E9E9E",
+    "description": "本國 Taiwan非外國人互惠適用對象。",
+    "flag": "🇹🇼",
+    "updated": "2026-07-23"
+  },
+  "KOR": {
+    "countryZh": "韓國",
+    "countryEn": "South Korea",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇰🇷",
+    "updated": "2026-07-23"
+  },
+  "JPN": {
+    "countryZh": "日本",
+    "countryEn": "Japan",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇯🇵",
+    "updated": "2026-07-23"
+  },
+  "NZL": {
+    "countryZh": "紐西蘭",
+    "countryEn": "New Zealand",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇳🇿",
+    "updated": "2026-07-23"
+  },
+  "AUS": {
+    "countryZh": "澳大利亞",
+    "countryEn": "Australia",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇦🇺",
+    "updated": "2026-07-23"
+  },
+  "SWZ": {
+    "countryZh": "史瓦濟蘭",
+    "countryEn": "Swaziland",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇸🇿",
+    "updated": "2026-07-23"
+  },
+  "BEL": {
+    "countryZh": "比利時",
+    "countryEn": "Belgium",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇧🇪",
+    "updated": "2026-07-23"
+  },
+  "GBR": {
+    "countryZh": "英國",
+    "countryEn": "United Kingdom",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇬🇧",
+    "updated": "2026-07-23"
+  },
+  "DEU": {
+    "countryZh": "德國",
+    "countryEn": "Germany",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇩🇪",
+    "updated": "2026-07-23"
+  },
+  "LUX": {
+    "countryZh": "盧森堡",
+    "countryEn": "Luxembourg",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇱🇺",
+    "updated": "2026-07-23"
+  },
+  "ESP": {
+    "countryZh": "西班牙",
+    "countryEn": "Spain",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇪🇸",
+    "updated": "2026-07-23"
+  },
+  "IRL": {
+    "countryZh": "愛爾蘭",
+    "countryEn": "Ireland",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇮🇪",
+    "updated": "2026-07-23"
+  },
+  "GRC": {
+    "countryZh": "希臘",
+    "countryEn": "Greece",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇬🇷",
+    "updated": "2026-07-23"
+  },
+  "HND": {
+    "countryZh": "宏都拉斯",
+    "countryEn": "Honduras",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇭🇳",
+    "updated": "2026-07-23"
+  },
+  "SLV": {
+    "countryZh": "薩爾瓦多",
+    "countryEn": "El Salvador",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇸🇻",
+    "updated": "2026-07-23"
+  },
+  "PAN": {
+    "countryZh": "巴拿馬",
+    "countryEn": "Panama",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇵🇦",
+    "updated": "2026-07-23"
+  },
+  "DOM": {
+    "countryZh": "多明尼加共和國",
+    "countryEn": "Dominican Republic",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇩🇴",
+    "updated": "2026-07-23"
+  },
+  "LCA": {
+    "countryZh": "聖露西亞",
+    "countryEn": "Saint Lucia",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇱🇨",
+    "updated": "2026-07-23"
+  },
+  "PRY": {
+    "countryZh": "巴拉圭",
+    "countryEn": "Paraguay",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇵🇾",
+    "updated": "2026-07-23"
+  },
+  "ECU": {
+    "countryZh": "厄瓜多",
+    "countryEn": "Ecuador",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇪🇨",
+    "updated": "2026-07-23"
+  },
+  "BRA": {
+    "countryZh": "巴西",
+    "countryEn": "Brazil",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇧🇷",
+    "updated": "2026-07-23"
+  },
+  "PER": {
+    "countryZh": "秘魯",
+    "countryEn": "Peru",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇵🇪",
+    "updated": "2026-07-23"
+  },
+  "ARG": {
+    "countryZh": "阿根廷",
+    "countryEn": "Argentina",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇦🇷",
+    "updated": "2026-07-23"
+  },
+  "URY": {
+    "countryZh": "烏拉圭",
+    "countryEn": "Uruguay",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇺🇾",
+    "updated": "2026-07-23"
+  },
+  "CHL": {
+    "countryZh": "智利",
+    "countryEn": "Chile",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇨🇱",
+    "updated": "2026-07-23"
+  },
+  "ZAF": {
+    "countryZh": "南非",
+    "countryEn": "South Africa",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇿🇦",
+    "updated": "2026-07-23"
+  },
+  "FRA": {
+    "countryZh": "法國",
+    "countryEn": "France",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇫🇷",
+    "updated": "2026-07-23"
+  },
+  "NLD": {
+    "countryZh": "荷蘭",
+    "countryEn": "Netherlands",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇳🇱",
+    "updated": "2026-07-23"
+  },
+  "CHE": {
+    "countryZh": "瑞士",
+    "countryEn": "Switzerland",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇨🇭",
+    "updated": "2026-07-23"
+  },
+  "MYS": {
+    "countryZh": "馬來西亞",
+    "countryEn": "Malaysia",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇲🇾",
+    "updated": "2026-07-23"
+  },
+  "CAN": {
+    "countryZh": "加拿大",
+    "countryEn": "Canada",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇨🇦",
+    "updated": "2026-07-23"
+  },
+  "CYM": {
+    "countryZh": "英屬蓋曼群島",
+    "countryEn": "British Cayman Islands",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇰🇾",
+    "updated": "2026-07-23"
+  },
+  "VGB": {
+    "countryZh": "英屬維京群島",
+    "countryEn": "British Virgin Islands",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇻🇬",
+    "updated": "2026-07-23"
+  },
+  "PRT": {
+    "countryZh": "葡萄牙",
+    "countryEn": "Portugal",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇵🇹",
+    "updated": "2026-07-23"
+  },
+  "BLZ": {
+    "countryZh": "貝里斯",
+    "countryEn": "Belize",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇧🇿",
+    "updated": "2026-07-23"
+  },
+  "GGY": {
+    "countryZh": "英屬根西島",
+    "countryEn": "British Guernsey Islands",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇬🇬",
+    "updated": "2026-07-23"
+  },
+  "FIN": {
+    "countryZh": "芬蘭",
+    "countryEn": "Finland",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇫🇮",
+    "updated": "2026-07-23"
+  },
+  "MUS": {
+    "countryZh": "模里西斯",
+    "countryEn": "Mauritius",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇲🇺",
+    "updated": "2026-07-23"
+  },
+  "ITA": {
+    "countryZh": "義大利",
+    "countryEn": "Italy",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇮🇹",
+    "updated": "2026-07-23"
+  },
+  "JAM": {
+    "countryZh": "牙買加",
+    "countryEn": "Jamaica",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇯🇲",
+    "updated": "2026-07-23"
+  },
+  "GHA": {
+    "countryZh": "迦納",
+    "countryEn": "Ghana",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇬🇭",
+    "updated": "2026-07-23"
+  },
+  "IND": {
+    "countryZh": "印度",
+    "countryEn": "India",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇮🇳",
+    "updated": "2026-07-23"
+  },
+  "NOR": {
+    "countryZh": "挪威",
+    "countryEn": "Norway",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇳🇴",
+    "updated": "2026-07-23"
+  },
+  "AND": {
+    "countryZh": "安道爾",
+    "countryEn": "Andorra",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇦🇩",
+    "updated": "2026-07-23"
+  },
+  "BOL": {
+    "countryZh": "玻利維亞",
+    "countryEn": "Bolivia",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇧🇴",
+    "updated": "2026-07-23"
+  },
+  "BFA": {
+    "countryZh": "布吉納法索",
+    "countryEn": "Burkina Faso",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇧🇫",
+    "updated": "2026-07-23"
+  },
+  "GUY": {
+    "countryZh": "蓋亞那",
+    "countryEn": "Guyana",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇬🇾",
+    "updated": "2026-07-23"
+  },
+  "ISR": {
+    "countryZh": "以色列",
+    "countryEn": "Israel",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇮🇱",
+    "updated": "2026-07-23"
+  },
+  "MLT": {
+    "countryZh": "馬爾他",
+    "countryEn": "Malta",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇲🇹",
+    "updated": "2026-07-23"
+  },
+  "VEN": {
+    "countryZh": "委內瑞拉",
+    "countryEn": "Venezuela",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇻🇪",
+    "updated": "2026-07-23"
+  },
+  "GTM": {
+    "countryZh": "瓜地馬拉",
+    "countryEn": "Guatemala",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇬🇹",
+    "updated": "2026-07-23"
+  },
+  "MKD": {
+    "countryZh": "馬其頓",
+    "countryEn": "Macedonia",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇲🇰",
+    "updated": "2026-07-23"
+  },
+  "CYP": {
+    "countryZh": "賽普勒斯",
+    "countryEn": "Cyprus",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇨🇾",
+    "updated": "2026-07-23"
+  },
+  "NGA": {
+    "countryZh": "奈及利亞",
+    "countryEn": "Nigeria",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇳🇬",
+    "updated": "2026-07-23"
+  },
+  "SAU": {
+    "countryZh": "沙烏地阿拉伯",
+    "countryEn": "Saudi Arabia",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇸🇦",
+    "updated": "2026-07-23"
+  },
+  "SVK": {
+    "countryZh": "斯洛伐克",
+    "countryEn": "Slovakia",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇸🇰",
+    "updated": "2026-07-23"
+  },
+  "KNA": {
+    "countryZh": "聖克里斯多福及尼維斯聯邦",
+    "countryEn": "Saint Christopher and Nevis",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇰🇳",
+    "updated": "2026-07-23"
+  },
+  "POL": {
+    "countryZh": "波蘭",
+    "countryEn": "Poland",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇵🇱",
+    "updated": "2026-07-23"
+  },
+  "COL": {
+    "countryZh": "哥倫比亞",
+    "countryEn": "Colombia",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇨🇴",
+    "updated": "2026-07-23"
+  },
+  "MEX": {
+    "countryZh": "墨西哥",
+    "countryEn": "Mexico",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇲🇽",
+    "updated": "2026-07-23"
+  },
+  "BHS": {
+    "countryZh": "巴哈馬",
+    "countryEn": "The Bahamas",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇧🇸",
+    "updated": "2026-07-23"
+  },
+  "GRD": {
+    "countryZh": "格瑞那達",
+    "countryEn": "Grenada",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇬🇩",
+    "updated": "2026-07-23"
+  },
+  "VCT": {
+    "countryZh": "聖文森",
+    "countryEn": "St. Vincent and the Grenadines",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇻🇨",
+    "updated": "2026-07-23"
+  },
+  "SUR": {
+    "countryZh": "蘇利南",
+    "countryEn": "Suriname",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇸🇷",
+    "updated": "2026-07-23"
+  },
+  "TTO": {
+    "countryZh": "千里達及托巴哥",
+    "countryEn": "Trinidad and Tobago",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇹🇹",
+    "updated": "2026-07-23"
+  },
+  "BRB": {
+    "countryZh": "巴貝多",
+    "countryEn": "Barbados",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇧🇧",
+    "updated": "2026-07-23"
+  },
+  "DMA": {
+    "countryZh": "多明尼克",
+    "countryEn": "Commonwealth of Dominica",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇩🇲",
+    "updated": "2026-07-23"
+  },
+  "CPV": {
+    "countryZh": "維德角",
+    "countryEn": "Cape Verde",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇨🇻",
+    "updated": "2026-07-23"
+  },
+  "HTI": {
+    "countryZh": "海地",
+    "countryEn": "Haiti",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇭🇹",
+    "updated": "2026-07-23"
+  },
+  "COG": {
+    "countryZh": "剛果共和國",
+    "countryEn": "Republic of the Congo",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇨🇬",
+    "updated": "2026-07-23"
+  },
+  "RWA": {
+    "countryZh": "盧安達",
+    "countryEn": "Rwanda",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇷🇼",
+    "updated": "2026-07-23"
+  },
+  "BWA": {
+    "countryZh": "波札那",
+    "countryEn": "Botswana",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇧🇼",
+    "updated": "2026-07-23"
+  },
+  "GAB": {
+    "countryZh": "加彭",
+    "countryEn": "Gabon",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇬🇦",
+    "updated": "2026-07-23"
+  },
+  "JOR": {
+    "countryZh": "約旦",
+    "countryEn": "Jordan",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇯🇴",
+    "updated": "2026-07-23"
+  },
+  "NIC": {
+    "countryZh": "尼加拉瓜",
+    "countryEn": "Nicaragua",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇳🇮",
+    "updated": "2026-07-23"
+  },
+  "SWE": {
+    "countryZh": "瑞典",
+    "countryEn": "Sweden",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇸🇪",
+    "updated": "2026-07-23"
+  },
+  "SGP": {
+    "countryZh": "新加坡",
+    "countryEn": "Singapore",
+    "status": "conditional",
+    "statusZh": "附條件平等互惠",
+    "color": "#F2B84B",
+    "description": "1、 准許新加坡人民及公司(包括新加坡銀行)在我國取得不動產抵押 權。（內政部 87 年 2 月 24 日台內地字第 8702939 號函） 2、 新加坡人得在我國申請租賃工業區之土地或廠房。（內政部 89 年 5 月 2 日台內地字第 8906217 號函） 3、 有關新加坡人民在我國取得土地及建築物權利案，綜合現行土地 法 規、行政院及外交部上開函內容歸納如下： (一)基於土地法第 18 條平等互惠之立法精神，考量兩國國情不同， 及我國公寓大廈管理條例第 4 條第 2 項之規定，准許新加坡人 取得我國區分所有建物之任何一層作為住宅或商業使用，並得 依公寓大廈管理條例第 4 條第 2 項之規定准其取得基地所有 權或地上權之應有部分。 (二)關於新加坡人繼承我國土地，倘該土地屬土地法第 17 條第 1 項所列各款，依同條第 2 項、第 3 項規定辦理；另如為土地法 第 17 條第 1 項各款所列以外之土地，新加坡人得因繼承或遺 贈取得土地，並自辦理繼承或遺贈登記完畢之日起 5 年內移轉 與本國人，其案件列管及標售程序，類推適用土地法第 17 條 第 2 項後段及土地法第 17 條第 2 項執行要點規定。（內政部 104 年 6 月 15 日台內地字第 1040415546 號令） ",
+    "legalBasis": "內政部87年2月24日台內地字第8702939號函;內政部89年5月2日台內地字第8906217號函;內政部104年6月15日台內地字第1040415546號令",
+    "flag": "🇸🇬",
+    "updated": "2026-07-23",
+    "source": "內政部「外國人在我國取得或設定土地權利互惠國家一覽表」"
+  },
+  "PHL": {
+    "countryZh": "菲律賓",
+    "countryEn": "Philippines",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 1、准許菲律賓自然人或其公司在我國取得區分所有建物全部專有部分 40%以下(包含 40%)建物所有權，並依公寓大廈管理條例之規定准其取得基地所有權及地上權之應有部分。（內政部 86 年 10 月 22 日台內地字第 8683016 號函） 2、 菲國人民或公司得在我國取得不動產抵押權，其抵押物不以內政 部 86 年 10 月 22 日台內地字第 8683016 號函所定之區分所有建物為限。但其因行使抵押權擬取得不動產權利者，仍應符合上開函之規定，僅得取得區分所有建物全部專有部分 40%以下(包括 40%) 之建物所有權及其基地所有權、地上權之應有部分：如該不動產非屬區分所有建物，則不得取得。（內政部 86 年 12 月 13 日台 內地字第 8690004 號函） 3、 菲律賓人民在我國繼承取得土地及建物，不受上開本部 86 年 10 月 22 日台內地字第 8683016 號函釋之限制。（內政部 87 年 2 月 20 日台內地字第 8702904 號函）。",
+    "flag": "🇵🇭",
+    "updated": "2026-07-23"
+  },
+  "HKG": {
+    "countryZh": "香港地區",
+    "countryEn": "Hong Kong Region",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 1、86 年 7 月 1 日以前，香港居民、法人及團體機構得在我國取得或設定土地權利；86 年 7 月 1 日以後，在香港地區對於外國人士在該地取得不動產權利之規定未改變前仍得繼續適用。（內政部 86年 7 月 26 日台內地字第 8607355 號函）2、 香港居民，必須持有香港永久居民身分證，且除了可持有英國(海外)護照或香港護照外，不得持有其他地區或國家之旅行證照。（內政部 86 年 12 月 15 日台內地字第 8612195 號函）3、 依香港澳門關係條例施行細則第 3 條規定：「本條例第 4 條第 1 項所稱香港護照，係指由香港政府或其他有權機構核發，供香港居民國際旅行使用，具護照功能之旅行證照。」，故香港特別行政區政府簽發之中華人民共和國香港特別行政區護照，即為所稱之香港護照。至關於『香港居民』身分之認定，依香港澳門關係條例第 4條第 1 項規定意旨，當事人須持有香港永久居民身分證，且不能持有英國國民(海外)護照或香港護照以外之其他地區或國家之旅行證照，尚不得僅以持有香港護照而認定其為香港居民。（內政部 87年 6 月 10 日台內地字第 8706372 號函）4、 香港地區華僑身分證明書之效期認定及使用事宜：(一) 香港地區居民於『97』年(86 年 7 月 1 日)前所取得之華僑身分證明書不受效期影響，可繼續使用。(二) 自 86 年 7 月 1 日起行政院僑務委員會依法不得受理香港居民申請華僑身分證明書。（內政部 87 年 8 月 5 日台內地字第8708266 號函）。",
+    "flag": "🇭🇰",
+    "updated": "2026-07-23"
+  },
+  "THA": {
+    "countryZh": "泰國",
+    "countryEn": "Thailand",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 1、 泰國之人民或法人因居住或投資目的者，得在我國取得土地權利。 （內政部 92 年 8 月 8 日台內地字第 0920011585 號函） 2、 泰國人得因繼承而取得我國土地權利，至於有關其土地面積，因取得當時並無限制，辦理繼承時，應亦無須另予限制。（內政部 92 年 12 月 15 日台內地字第 0920016705 號函）。",
+    "flag": "🇹🇭",
+    "updated": "2026-07-23"
+  },
+  "FJI": {
+    "countryZh": "斐濟",
+    "countryEn": "Fiji",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 斐濟有關土地買賣法規對我國人民並無歧視規定，我國國民可比照其他國家人民，即使未在斐濟居留亦可在斐濟境內購買一公畝以下可自由買賣之土地，一公畝以上則須事先申請核准。國有土地僅可承租，租期至多為 99 年，另土著原始持有之土地，則由憲法規定不得買賣並為個人所有。（內政部 82 年 4 月 8 日台內地字第 8204467 號函）。",
+    "flag": "🇫🇯",
+    "updated": "2026-07-23"
+  },
+  "BMU": {
+    "countryZh": "百慕達",
+    "countryEn": "Bermuda",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 外國公司在百慕達不得購買或擁有土地，惟可租用土地，最高期限為 21 年，國人可依百慕達 1981 年公司法第 144 條規定設定抵押權。（內政部 85 年 9 月 11 日台內地字第 8508689 號函）。",
+    "flag": "🇧🇲",
+    "updated": "2026-07-23"
+  },
+  "DNK": {
+    "countryZh": "丹麥",
+    "countryEn": "Denmark",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 1、 准許丹麥人民在我國取得抵押權，並得免附互惠證明文件。惟丹麥人因行使抵押權而取得該不動產者，仍應依外國人在我國取得土地權利作業要點第 1 點規定，請當事人檢附由其本國適當機關出具載明該國對我國人民取得或設定同樣權利之證明文件。（內政部 87 年 6 月 15 日台內地字第 8706334 號函） 2、 准許丹麥人得因繼承在我國取得土地權利。（內政部 108 年 6 月 25 日台內地字第 1080263286 號令）。",
+    "flag": "🇩🇰",
+    "updated": "2026-07-23"
+  },
+  "UKR": {
+    "countryZh": "烏克蘭",
+    "countryEn": "Ukraine",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 除農地禁止以外，烏克蘭人得在我國取得或設定土地權利。（內政部 97 年 4 月 14 日台內地字第 0970059761 號令）。",
+    "flag": "🇺🇦",
+    "updated": "2026-07-23"
+  },
+  "CZE": {
+    "countryZh": "捷克",
+    "countryEn": "Czech Republic",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 捷克人得在我國取得或設定農業用地以外之土地權利。(內政部110年 5月13日台內地字第1100262594號令)。",
+    "flag": "🇨🇿",
+    "updated": "2026-07-23"
+  },
+  "SVN": {
+    "countryZh": "斯洛維尼亞",
+    "countryEn": "Slovenia",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 准許斯洛維尼亞人以法人身分在我國取得或設定土地權利。(內政部98 年 9 月 7 日台內地字第 0980161108 號令）。",
+    "flag": "🇸🇮",
+    "updated": "2026-07-23"
+  },
+  "OMN": {
+    "countryZh": "阿曼",
+    "countryEn": "Oman",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 阿曼人僅得依土地法第 19 條第 1 項第 8 款暨外國人投資國內重大建設整體經濟或農牧經營取得土地辦法第 2 條第 1 項第 2 款第 1 目『觀光旅館、觀光遊樂設施之開發』之規定取得我國土地。(內政部 98 年 12 月 18 日台內地字第 0980216223 號令) 。",
+    "flag": "🇴🇲",
+    "updated": "2026-07-23"
+  },
+  "LBY": {
+    "countryZh": "利比亞",
+    "countryEn": "Libya",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 利比亞人僅得因投資之目的在我國取得或設定土地權利。(內政部 98年 12 月 18 日台內地字第 0980216223 號令) 。",
+    "flag": "🇱🇾",
+    "updated": "2026-07-23"
+  },
+  "BGR": {
+    "countryZh": "保加利亞",
+    "countryEn": "Bulgaria",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 保加利亞人僅得以法人身分在我國取得或設定土地權利。(內政部 98 年 12 月 18 日台內地字第 0980216223 號令) 。",
+    "flag": "🇧🇬",
+    "updated": "2026-07-23"
+  },
+  "RUS": {
+    "countryZh": "俄羅斯",
+    "countryEn": "Russia",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 俄羅斯人得在我國取得或設定農業用地外之土地權利。(內政部 98 年 12 月 18 日台內地字第 0980216223 號令) 。",
+    "flag": "🇷🇺",
+    "updated": "2026-07-23"
+  },
+  "HUN": {
+    "countryZh": "匈牙利",
+    "countryEn": "Hungary",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 匈牙利人得在我國取得或設定農業用地外之土地權利。(內政部 98 年 12 月 18 日台內地字第 0980216223 號令) 。",
+    "flag": "🇭🇺",
+    "updated": "2026-07-23"
+  },
+  "EGY": {
+    "countryZh": "埃及",
+    "countryEn": "Egypt",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 埃及人得在我國取得或設定農業用地外之土地權利。(內政部 98 年 12 月 18 日台內地字第 0980216223 號令) 。",
+    "flag": "🇪🇬",
+    "updated": "2026-07-23"
+  },
+  "EST": {
+    "countryZh": "愛沙尼亞",
+    "countryEn": "Estonia",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 愛沙尼亞人得在我國取得或設定土地權利，惟農業用地面積不得超過 10 公頃。(內政部 100 年 2 月 24 日台內地字第 1000035369 號令) 。",
+    "flag": "🇪🇪",
+    "updated": "2026-07-23"
+  },
+  "LVA": {
+    "countryZh": "拉脫維亞",
+    "countryEn": "Latvia",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 拉脫維亞人得在我國取得或設定非農地之土地權利。(內政部 100 年 2 月 24 日台內地字第 1000035369 號令) 。",
+    "flag": "🇱🇻",
+    "updated": "2026-07-23"
+  },
+  "KAZ": {
+    "countryZh": "哈薩克",
+    "countryEn": "Kazakhstan",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 哈薩克人得在我國取得或設定工商業用地、住宅用地、大樓及其附屬相關用地，不得取得農業用地。(內政部 101 年 7 月 18 日台內地字第 1010244285 號令) 。",
+    "flag": "🇰🇿",
+    "updated": "2026-07-23"
+  },
+  "LBN": {
+    "countryZh": "黎巴嫩",
+    "countryEn": "Lebanon",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 黎巴嫩人得在我國取得或設定土地權利，惟所購土地不得多於 3000 平方公尺。(內政部 101 年 7 月 18 日台內地字第 1010244285 號令) 。",
+    "flag": "🇱🇧",
+    "updated": "2026-07-23"
+  },
+  "MAR": {
+    "countryZh": "摩洛哥",
+    "countryEn": "Morocco",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 摩洛哥人得在我國取得或設定農業用地外之土地權利。(內政部 101 年 7 月 18 日台內地字第 1010244285 號令)",
+    "flag": "🇲🇦",
+    "updated": "2026-07-23"
+  },
+  "SYC": {
+    "countryZh": "塞席爾共和國",
+    "countryEn": "Republic of Seychelles",
+    "status": "conditional",
+    "color": "#F2B84B",
+    "description": "附條件平等互惠之國家 Conditional equal and reciprocal country. 塞席爾共和國人得在我國取得或設定公有土地以外之土地權利。(內政部 105 年 12 月 30 日台內地字第 1050448537 號令)",
+    "flag": "🇲🇦",
+    "updated": "2026-07-23"
+  },
+  "IDN": {
+    "countryZh": "印度尼西亞",
+    "countryEn": "Indonesia",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇮🇩",
+    "updated": "2026-07-23"
+  },
+  "KHM": {
+    "countryZh": "柬埔寨",
+    "countryEn": "Cambodia",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇰🇭",
+    "updated": "2026-07-23"
+  },
+  "VNM": {
+    "countryZh": "越南",
+    "countryEn": "Vietnam",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇻🇳",
+    "updated": "2026-07-23"
+  },
+  "MMR": {
+    "countryZh": "緬甸",
+    "countryEn": "Myanmar",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇲🇲",
+    "updated": "2026-07-23"
+  },
+  "BRN": {
+    "countryZh": "汶萊",
+    "countryEn": "Brunei",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇧🇳",
+    "updated": "2026-07-23"
+  },
+  "IRN": {
+    "countryZh": "伊朗",
+    "countryEn": "Iran",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇮🇷",
+    "updated": "2026-07-23"
+  },
+  "KEN": {
+    "countryZh": "肯亞",
+    "countryEn": "Kenya",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇰🇪",
+    "updated": "2026-07-23"
+  },
+  "KIR": {
+    "countryZh": "吉里巴斯",
+    "countryEn": "Kiribati",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇰🇮",
+    "updated": "2026-07-23"
+  },
+  "MHL": {
+    "countryZh": "馬紹爾群島共和國",
+    "countryEn": "Marshall Islands",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇲🇭",
+    "updated": "2026-07-23"
+  },
+  "MNG": {
+    "countryZh": "蒙古",
+    "countryEn": "Mongolia",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇲🇳",
+    "updated": "2026-07-23"
+  },
+  "MOZ": {
+    "countryZh": "莫三比克",
+    "countryEn": "Mozambique",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇲🇿",
+    "updated": "2026-07-23"
+  },
+  "NRU": {
+    "countryZh": "諾魯",
+    "countryEn": "Nauru",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇳🇷",
+    "updated": "2026-07-23"
+  },
+  "PLW": {
+    "countryZh": "帛琉",
+    "countryEn": "Palau",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇵🇼",
+    "updated": "2026-07-23"
+  },
+  "TUR": {
+    "countryZh": "土耳其",
+    "countryEn": "Turkey",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇹🇷",
+    "updated": "2026-07-23"
+  },
+  "UGA": {
+    "countryZh": "烏干達",
+    "countryEn": "Uganda",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇺🇬",
+    "updated": "2026-07-23"
+  },
+  "ALB": {
+    "countryZh": "阿爾巴尼亞",
+    "countryEn": "Albania",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇦🇱",
+    "updated": "2026-07-23"
+  },
+  "TUV": {
+    "countryZh": "吐魯瓦",
+    "countryEn": "Tuvalu",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇹🇻",
+    "updated": "2026-07-23"
+  },
+  "HRV": {
+    "countryZh": "克羅埃西亞",
+    "countryEn": "Croatia",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇭🇷",
+    "updated": "2026-07-23"
+  },
+  "STP": {
+    "countryZh": "聖多美普林西比",
+    "countryEn": "Sao Tome and Principe",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇸🇹",
+    "updated": "2026-07-23"
+  },
+  "LSO": {
+    "countryZh": "賴索托",
+    "countryEn": "Lesotho",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇱🇸",
+    "updated": "2026-07-23"
+  },
+  "SLB": {
+    "countryZh": "索羅門群島",
+    "countryEn": "Solomon Islands",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇸🇧",
+    "updated": "2026-07-23"
+  },
+  "SMR": {
+    "countryZh": "聖馬利諾共和國",
+    "countryEn": "San Marino",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇸🇲",
+    "updated": "2026-07-23"
+  },
+  "KWT": {
+    "countryZh": "科威特",
+    "countryEn": "Kuwait",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇰🇼",
+    "updated": "2026-07-23"
+  },
+  "TLS": {
+    "countryZh": "東帝汶",
+    "countryEn": "East Timor",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇹🇱",
+    "updated": "2026-07-23"
+  },
+  "FSM": {
+    "countryZh": "密克羅尼西亞聯邦",
+    "countryEn": "Micronesia",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇫🇲",
+    "updated": "2026-07-23"
+  },
+  "LTU": {
+    "countryZh": "立陶宛",
+    "countryEn": "Lithuania",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇱🇹",
+    "updated": "2026-07-23"
+  },
+  "AZE": {
+    "countryZh": "亞塞拜然",
+    "countryEn": "Azerbaijan",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇦🇿",
+    "updated": "2026-07-23"
+  },
+  "BLR": {
+    "countryZh": "白俄羅斯",
+    "countryEn": "Belarus",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇧🇾",
+    "updated": "2026-07-23"
+  },
+  "ARM": {
+    "countryZh": "亞美尼亞",
+    "countryEn": "Armenia",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇦🇲",
+    "updated": "2026-07-23"
+  },
+  "KGZ": {
+    "countryZh": "吉爾吉斯",
+    "countryEn": "Kyrgyzstan",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇰🇬",
+    "updated": "2026-07-23"
+  },
+  "LAO": {
+    "countryZh": "寮國",
+    "countryEn": "Laos",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇱🇦",
+    "updated": "2026-07-23"
+  },
+  "TJK": {
+    "countryZh": "塔吉克",
+    "countryEn": "Tajikistan",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇹🇯",
+    "updated": "2026-07-23"
+  },
+  "TKM": {
+    "countryZh": "土庫曼",
+    "countryEn": "Turkmenistan",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇹🇲",
+    "updated": "2026-07-23"
+  },
+  "UZB": {
+    "countryZh": "烏茲別克",
+    "countryEn": "Uzbekistan",
+    "status": "none",
+    "color": "#D9534F",
+    "description": "非平等互惠之國家 Non-equal and reciprocal countries。",
+    "flag": "🇺🇿",
+    "updated": "2026-07-23"
+  },
+  "USA": {
+    "countryZh": "美國",
+    "countryEn": "United States",
+    "status": "state_based",
+    "color": "#9E9E9E",
+    "description": "美國不得以國家整體單一顏色判定；應依美國各州在官方互惠名單中的分類逐州標示。",
+    "flag": "🇺🇸",
+    "updated": "2026-07-23",
+    "statusZh": "依州別判定",
+    "stateBased": true,
+    "states": {
+      "OH": {
+        "stateZh": "俄亥俄州",
+        "stateEn": "Ohio",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "NE": {
+        "stateZh": "內布拉斯加州",
+        "stateEn": "Nebraska",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "TN": {
+        "stateZh": "田納西州",
+        "stateEn": "Tennessee",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "FL": {
+        "stateZh": "佛羅里達州",
+        "stateEn": "Florida",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "MA": {
+        "stateZh": "麻薩諸塞州",
+        "stateEn": "Massachusetts",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "NJ": {
+        "stateZh": "新澤西州",
+        "stateEn": "New Jersey",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "CT": {
+        "stateZh": "康乃狄克州",
+        "stateEn": "Connecticut",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "MO": {
+        "stateZh": "密蘇里州",
+        "stateEn": "Missouri",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "DE": {
+        "stateZh": "德拉瓦州",
+        "stateEn": "Delaware",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "CA": {
+        "stateZh": "加利福尼亞州",
+        "stateEn": "California",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "HI": {
+        "stateZh": "夏威夷州",
+        "stateEn": "Hawaii",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "TX": {
+        "stateZh": "德克薩斯州",
+        "stateEn": "Texas",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "MI": {
+        "stateZh": "密西根州",
+        "stateEn": "Michigan",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "NY": {
+        "stateZh": "紐約州",
+        "stateEn": "New York",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "GA": {
+        "stateZh": "喬治亞州",
+        "stateEn": "Georgia",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "PA": {
+        "stateZh": "賓夕法尼亞州",
+        "stateEn": "Pennsylvania",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "WI": {
+        "stateZh": "威斯康辛州",
+        "stateEn": "Wisconsin",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "IL": {
+        "stateZh": "伊利諾州",
+        "stateEn": "Illinois",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "OR": {
+        "stateZh": "俄勒岡州",
+        "stateEn": "Oregon",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "DC": {
+        "nameZh": "華盛頓特區",
+        "nameEn": "Washington D.C.",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "IN": {
+        "stateZh": "印第安納州",
+        "stateEn": "Indiana",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "VA": {
+        "stateZh": "維吉尼亞州",
+        "stateEn": "Virginia",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "AK": {
+        "stateZh": "阿拉斯加州",
+        "stateEn": "Alaska",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "AL": {
+        "stateZh": "阿拉巴馬州",
+        "stateEn": "Alabama",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "AR": {
+        "stateZh": "阿肯色州",
+        "stateEn": "Arkansas",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "ID": {
+        "stateZh": "愛達荷州",
+        "stateEn": "Idaho",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "KY": {
+        "stateZh": "肯德基州",
+        "stateEn": "Kentucky",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "ME": {
+        "stateZh": "緬因州",
+        "stateEn": "Maine",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "MT": {
+        "stateZh": "蒙大拿州",
+        "stateEn": "Montana",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "NV": {
+        "stateZh": "內華達州",
+        "stateEn": "Nevada",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "NH": {
+        "stateZh": "新罕布夏州",
+        "stateEn": "New Hampshire",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "NM": {
+        "stateZh": "新墨西哥州",
+        "stateEn": "New Mexico",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "NC": {
+        "stateZh": "北卡羅萊納州",
+        "stateEn": "North Carolina",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "RI": {
+        "stateZh": "羅德島州",
+        "stateEn": "Rhode Island",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "UT": {
+        "stateZh": "猶他州",
+        "stateEn": "Utah",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "VT": {
+        "stateZh": "佛蒙特州",
+        "stateEn": "Vermont",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "WA": {
+        "stateZh": "華盛頓州",
+        "stateEn": "Washington",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "WY": {
+        "stateZh": "懷俄明州",
+        "stateEn": "Wyoming",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "KS": {
+        "stateZh": "堪薩斯州",
+        "stateEn": "Kansas",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "CO": {
+        "stateZh": "科羅拉多州",
+        "stateEn": "Colorado",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "AZ": {
+        "stateZh": "亞利桑那州",
+        "stateEn": "Arizona",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "LA": {
+        "stateZh": "路易斯安那州",
+        "stateEn": "Louisiana",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "美國互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      },
+      "SC": {
+        "stateZh": "南卡羅萊納州",
+        "stateEn": "South Carolina",
+        "status": "conditional",
+        "statusZh": "附條件平等互惠",
+        "color": "#F2B84B",
+        "description": "准許美國南卡羅萊納州人取得或設定面積 50 萬英畝 ( 約 202,345 公頃)以下之土地權利。",
+        "legalBasis": "內政部93年11月18日台內地字第0930015751號函",
+        "updated": "2026-07-23"
+      },
+      "MN": {
+        "stateZh": "明尼蘇達州",
+        "stateEn": "Minnesota",
+        "status": "conditional",
+        "statusZh": "附條件平等互惠",
+        "color": "#F2B84B",
+        "description": "准許美國明尼蘇達州人取得或設定農業用地以外之土地權利。",
+        "legalBasis": "內政部93年8月19日台內地字第0930012056號函",
+        "updated": "2026-07-23"
+      },
+      "IA": {
+        "stateZh": "愛荷華州",
+        "stateEn": "Iowa",
+        "status": "conditional",
+        "statusZh": "附條件平等互惠",
+        "color": "#F2B84B",
+        "description": "准許美國愛荷華州人取得或設定農業用地以外之土地權利。",
+        "legalBasis": "內政部93年8月19日台內地字第0930012056號函",
+        "updated": "2026-07-23"
+      },
+      "MD": {
+        "stateZh": "馬里蘭州",
+        "stateEn": "Maryland",
+        "status": "conditional",
+        "statusZh": "附條件平等互惠",
+        "color": "#F2B84B",
+        "description": "准許美國馬里蘭州人取得或設定農業用地以外之土地權利。",
+        "legalBasis": "內政部93年8月19日台內地字第0930012056號函",
+        "updated": "2026-07-23"
+      },
+      "WV": {
+        "stateZh": "西維吉尼亞州",
+        "stateEn": "West Virginia",
+        "status": "conditional",
+        "statusZh": "附條件平等互惠",
+        "color": "#F2B84B",
+        "description": "准許美國西維吉尼亞州人取得或設定農業用地以外之土地權利。",
+        "legalBasis": "內政部93年8月19日台內地字第0930012056號函",
+        "updated": "2026-07-23"
+      },
+      "ND": {
+        "stateZh": "北達科他州",
+        "stateEn": "North Dakota",
+        "status": "conditional",
+        "statusZh": "附條件平等互惠",
+        "color": "#F2B84B",
+        "description": "准許美國北達科他州人取得或設定農業用地以外之土地權利。",
+        "legalBasis": "內政部93年11月18日台內地字第0930015751號函",
+        "updated": "2026-07-23"
+      },
+      "SD": {
+        "stateZh": "南達科他州",
+        "stateEn": "South Dakota",
+        "status": "conditional",
+        "statusZh": "附條件平等互惠",
+        "color": "#F2B84B",
+        "description": "准許美國南達科他州人取得或設定農業用地以外之土地權利。",
+        "legalBasis": "內政部93年11月18日台內地字第0930015751號函",
+        "updated": "2026-07-23"
+      },
+      "MS": {
+        "stateZh": "密西西比州",
+        "stateEn": "Mississippi",
+        "status": "conditional",
+        "statusZh": "附條件平等互惠",
+        "color": "#F2B84B",
+        "description": " 美國密西西比州人得在我國取得或設定土地權利，惟就公有土地部分， 僅有獲得居留權之密州人方得擁有，未具居留權因債務而取得土地者， 其擁有年限不得超過 20 年；公司或其他社團法人之成員如含有未具居 留權之密州人不得直接或間接取得。另工業用地部分，未具居留權之 密州人之取得和擁有不得超過 230 英畝。",
+        "legalBasis": "內政部97年4月15日台內地字第0970057557號令",
+        "updated": "2026-07-23"
+      },
+      "OK": {
+        "stateZh": "奧克拉荷馬州",
+        "stateEn": "Oklahoma",
+        "status": "none",
+        "statusZh": "非平等互惠 Non-equal and reciprocal ",
+        "color": "#D9534F",
+        "description": "美國互惠國家一覽表列為「非平等互惠之國家」，無法取得我國不動產。",
+        "legalBasis": "",
+        "updated": "2026-07-23"
+      }
+    },
+    "districts": {},
+    "source": "內政部「外國人在我國取得或設定土地權利互惠國家一覽表」"
+  },
+  "AUT": {
+    "countryZh": "奧地利",
+    "countryEn": "Austria",
+    "status": "state_based",
+    "statusZh": "依邦別判定",
+    "color": "#9E9E9E",
+    "description": "奧地利不得以國家整體單一顏色判定；應依奧地利各邦（Bundesland）在官方互惠名單中的分類逐邦標示。",
+    "flag": "🇦🇹",
+    "updated": "2026-08-12",
+    "stateBased": true,
+    "states": {
+      "B": {
+        "stateZh": "布根蘭邦(奧地利)",
+        "stateEn": "Burgenland",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-08-12"
+      },
+      "K": {
+        "stateZh": "肯特邦(奧地利)",
+        "stateEn": "Carinthia",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-08-12"
+      },
+      "N": {
+        "stateZh": "下奧地利邦(奧地利)",
+        "stateEn": "Niederösterreich",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-08-12"
+      },
+      "O": {
+        "stateZh": "上奧地利邦(奧地利)",
+        "stateEn": "Oberösterreich",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-08-12"
+      },
+      "S": {
+        "stateZh": "薩爾斯堡邦(奧地利)",
+        "stateEn": "Salzburg",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-08-12"
+      },
+      "ST": {
+        "stateZh": "史泰爾馬克邦(奧地利)",
+        "stateEn": "Styria",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-08-12"
+      },
+      "T": {
+        "stateZh": "提洛邦(奧地利)",
+        "stateEn": "Tyrol",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-08-12"
+      },
+      "V": {
+        "stateZh": "福拉爾貝格邦(奧地利)",
+        "stateEn": "Vorarlberg",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-08-12"
+      },
+      "W": {
+        "stateZh": "維也納邦(奧地利)",
+        "stateEn": "Vienna",
+        "status": "equal",
+        "statusZh": "完全平等互惠",
+        "color": "#43A050",
+        "description": "互惠國家一覽表列為「完全平等互惠之國家」。",
+        "legalBasis": "",
+        "updated": "2026-08-12"
+      }
+    }
+  },
+  "AFG": {
+    "countryZh": "阿富汗",
+    "countryEn": "Afghanistan",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇦🇫",
+    "updated": "2026-08-14"
+  },
+  "AGO": {
+    "countryZh": "安哥拉",
+    "countryEn": "Angola",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇦🇴",
+    "updated": "2026-08-14"
+  },
+  "ARE": {
+    "countryZh": "阿拉伯聯合大公國",
+    "countryEn": "United Arab Emirates",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇦🇪",
+    "updated": "2026-08-14"
+  },
+  "ATA": {
+    "countryZh": "南極洲",
+    "countryEn": "Antarctica",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇦🇶",
+    "updated": "2026-08-14"
+  },
+  "ATF": {
+    "countryZh": "法屬南方屬地",
+    "countryEn": "French Southern Territories",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇹🇫",
+    "updated": "2026-08-14"
+  },
+  "BDI": {
+    "countryZh": "蒲隆地",
+    "countryEn": "Burundi",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇧🇮",
+    "updated": "2026-08-14"
+  },
+  "BEN": {
+    "countryZh": "貝南",
+    "countryEn": "Benin",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇧🇯",
+    "updated": "2026-08-14"
+  },
+  "BGD": {
+    "countryZh": "孟加拉",
+    "countryEn": "Bangladesh",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇧🇩",
+    "updated": "2026-08-14"
+  },
+  "BIH": {
+    "countryZh": "波士尼亞與赫塞哥維納",
+    "countryEn": "Bosnia and Herzegovina",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇧🇦",
+    "updated": "2026-08-14"
+  },
+  "BTN": {
+    "countryZh": "不丹",
+    "countryEn": "Bhutan",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇧🇹",
+    "updated": "2026-08-14"
+  },
+  "CAF": {
+    "countryZh": "中非共和國",
+    "countryEn": "Central African Republic",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇨🇫",
+    "updated": "2026-08-14"
+  },
+  "CHN": {
+    "countryZh": "中國",
+    "countryEn": "China",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇨🇳",
+    "updated": "2026-08-14"
+  },
+  "CIV": {
+    "countryZh": "象牙海岸",
+    "countryEn": "Côte d'Ivoire",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇨🇮",
+    "updated": "2026-08-14"
+  },
+  "CMR": {
+    "countryZh": "喀麥隆",
+    "countryEn": "Cameroon",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇨🇲",
+    "updated": "2026-08-14"
+  },
+  "COD": {
+    "countryZh": "剛果民主共和國",
+    "countryEn": "Democratic Republic of the Congo",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇨🇩",
+    "updated": "2026-08-14"
+  },
+  "CRI": {
+    "countryZh": "哥斯大黎加",
+    "countryEn": "Costa Rica",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇨🇷",
+    "updated": "2026-08-14"
+  },
+  "CS-KM": {
+    "countryZh": "科索沃",
+    "countryEn": "Kosovo",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇽🇰",
+    "updated": "2026-08-14"
+  },
+  "CUB": {
+    "countryZh": "古巴",
+    "countryEn": "Cuba",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇨🇺",
+    "updated": "2026-08-14"
+  },
+  "DJI": {
+    "countryZh": "吉布地",
+    "countryEn": "Djibouti",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇩🇯",
+    "updated": "2026-08-14"
+  },
+  "DZA": {
+    "countryZh": "阿爾及利亞",
+    "countryEn": "Algeria",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇩🇿",
+    "updated": "2026-08-14"
+  },
+  "ERI": {
+    "countryZh": "厄利垂亞",
+    "countryEn": "Eritrea",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇪🇷",
+    "updated": "2026-08-14"
+  },
+  "ESH": {
+    "countryZh": "西撒哈拉",
+    "countryEn": "Western Sahara",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇪🇭",
+    "updated": "2026-08-14"
+  },
+  "ETH": {
+    "countryZh": "衣索比亞",
+    "countryEn": "Ethiopia",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇪🇹",
+    "updated": "2026-08-14"
+  },
+  "FLK": {
+    "countryZh": "福克蘭群島",
+    "countryEn": "Falkland Islands",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇫🇰",
+    "updated": "2026-08-14"
+  },
+  "GEO": {
+    "countryZh": "喬治亞",
+    "countryEn": "Georgia",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇬🇪",
+    "updated": "2026-08-14"
+  },
+  "GIN": {
+    "countryZh": "幾內亞",
+    "countryEn": "Guinea",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇬🇳",
+    "updated": "2026-08-14"
+  },
+  "GMB": {
+    "countryZh": "甘比亞",
+    "countryEn": "Gambia",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇬🇲",
+    "updated": "2026-08-14"
+  },
+  "GNB": {
+    "countryZh": "幾內亞比索",
+    "countryEn": "Guinea-Bissau",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇬🇼",
+    "updated": "2026-08-14"
+  },
+  "GNQ": {
+    "countryZh": "赤道幾內亞",
+    "countryEn": "Equatorial Guinea",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇬🇶",
+    "updated": "2026-08-14"
+  },
+  "GRL": {
+    "countryZh": "格陵蘭",
+    "countryEn": "Greenland",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇬🇱",
+    "updated": "2026-08-14"
+  },
+  "GUF": {
+    "countryZh": "法屬圭亞那",
+    "countryEn": "French Guiana",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇬🇫",
+    "updated": "2026-08-14"
+  },
+  "IRQ": {
+    "countryZh": "伊拉克",
+    "countryEn": "Iraq",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇮🇶",
+    "updated": "2026-08-14"
+  },
+  "ISL": {
+    "countryZh": "冰島",
+    "countryEn": "Iceland",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇮🇸",
+    "updated": "2026-08-14"
+  },
+  "LBR": {
+    "countryZh": "賴比瑞亞",
+    "countryEn": "Liberia",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇱🇷",
+    "updated": "2026-08-14"
+  },
+  "LKA": {
+    "countryZh": "斯里蘭卡",
+    "countryEn": "Sri Lanka",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇱🇰",
+    "updated": "2026-08-14"
+  },
+  "MDA": {
+    "countryZh": "摩爾多瓦",
+    "countryEn": "Moldova",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇲🇩",
+    "updated": "2026-08-14"
+  },
+  "MDG": {
+    "countryZh": "馬達加斯加",
+    "countryEn": "Madagascar",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇲🇬",
+    "updated": "2026-08-14"
+  },
+  "MLI": {
+    "countryZh": "馬利",
+    "countryEn": "Mali",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇲🇱",
+    "updated": "2026-08-14"
+  },
+  "MNE": {
+    "countryZh": "蒙特內哥羅",
+    "countryEn": "Montenegro",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇲🇪",
+    "updated": "2026-08-14"
+  },
+  "MRT": {
+    "countryZh": "茅利塔尼亞",
+    "countryEn": "Mauritania",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇲🇷",
+    "updated": "2026-08-14"
+  },
+  "MWI": {
+    "countryZh": "馬拉威",
+    "countryEn": "Malawi",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇲🇼",
+    "updated": "2026-08-14"
+  },
+  "NAM": {
+    "countryZh": "納米比亞",
+    "countryEn": "Namibia",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇳🇦",
+    "updated": "2026-08-14"
+  },
+  "NCL": {
+    "countryZh": "新喀里多尼亞",
+    "countryEn": "New Caledonia",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇳🇨",
+    "updated": "2026-08-14"
+  },
+  "NER": {
+    "countryZh": "尼日",
+    "countryEn": "Niger",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇳🇪",
+    "updated": "2026-08-14"
+  },
+  "NPL": {
+    "countryZh": "尼泊爾",
+    "countryEn": "Nepal",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇳🇵",
+    "updated": "2026-08-14"
+  },
+  "PAK": {
+    "countryZh": "巴基斯坦",
+    "countryEn": "Pakistan",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇵🇰",
+    "updated": "2026-08-14"
+  },
+  "PNG": {
+    "countryZh": "巴布亞紐幾內亞",
+    "countryEn": "Papua New Guinea",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇵🇬",
+    "updated": "2026-08-14"
+  },
+  "PRI": {
+    "countryZh": "波多黎各",
+    "countryEn": "Puerto Rico",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇵🇷",
+    "updated": "2026-08-14"
+  },
+  "PRK": {
+    "countryZh": "北韓",
+    "countryEn": "North Korea",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇰🇵",
+    "updated": "2026-08-14"
+  },
+  "PSE": {
+    "countryZh": "巴勒斯坦",
+    "countryEn": "Palestine",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇵🇸",
+    "updated": "2026-08-14"
+  },
+  "QAT": {
+    "countryZh": "卡達",
+    "countryEn": "Qatar",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇶🇦",
+    "updated": "2026-08-14"
+  },
+  "ROU": {
+    "countryZh": "羅馬尼亞",
+    "countryEn": "Romania",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇷🇴",
+    "updated": "2026-08-14"
+  },
+  "SDN": {
+    "countryZh": "蘇丹",
+    "countryEn": "Sudan",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇸🇩",
+    "updated": "2026-08-14"
+  },
+  "SEN": {
+    "countryZh": "塞內加爾",
+    "countryEn": "Senegal",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇸🇳",
+    "updated": "2026-08-14"
+  },
+  "SLE": {
+    "countryZh": "獅子山",
+    "countryEn": "Sierra Leone",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇸🇱",
+    "updated": "2026-08-14"
+  },
+  "SOL": {
+    "countryZh": "索馬利蘭",
+    "countryEn": "Somaliland",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇸🇴",
+    "updated": "2026-08-14"
+  },
+  "SOM": {
+    "countryZh": "索馬利亞",
+    "countryEn": "Somalia",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇸🇴",
+    "updated": "2026-08-14"
+  },
+  "SRB": {
+    "countryZh": "塞爾維亞",
+    "countryEn": "Serbia",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇷🇸",
+    "updated": "2026-08-14"
+  },
+  "SSD": {
+    "countryZh": "南蘇丹",
+    "countryEn": "South Sudan",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇸🇸",
+    "updated": "2026-08-14"
+  },
+  "SYR": {
+    "countryZh": "敘利亞",
+    "countryEn": "Syria",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇸🇾",
+    "updated": "2026-08-14"
+  },
+  "TCD": {
+    "countryZh": "查德",
+    "countryEn": "Chad",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇹🇩",
+    "updated": "2026-08-14"
+  },
+  "TGO": {
+    "countryZh": "多哥",
+    "countryEn": "Togo",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇹🇬",
+    "updated": "2026-08-14"
+  },
+  "TUN": {
+    "countryZh": "突尼西亞",
+    "countryEn": "Tunisia",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇹🇳",
+    "updated": "2026-08-14"
+  },
+  "TZA": {
+    "countryZh": "坦尚尼亞",
+    "countryEn": "Tanzania",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇹🇿",
+    "updated": "2026-08-14"
+  },
+  "VUT": {
+    "countryZh": "萬那杜",
+    "countryEn": "Vanuatu",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇻🇺",
+    "updated": "2026-08-14"
+  },
+  "XNC": {
+    "countryZh": "北賽普勒斯",
+    "countryEn": "Northern Cyprus",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇹🇷",
+    "updated": "2026-08-14"
+  },
+  "YEM": {
+    "countryZh": "葉門",
+    "countryEn": "Yemen",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇾🇪",
+    "updated": "2026-08-14"
+  },
+  "ZMB": {
+    "countryZh": "尚比亞",
+    "countryEn": "Zambia",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇿🇲",
+    "updated": "2026-08-14"
+  },
+  "ZWE": {
+    "countryZh": "辛巴威",
+    "countryEn": "Zimbabwe",
+    "status": "unknown",
+    "color": "#9E9E9E",
+    "description": "目前沒有這個國家/地區的互惠資料，狀態尚待查證。",
+    "flag": "🇿🇼",
+    "updated": "2026-08-14"
+  },
+  "MCO": {
+    "countryZh": "摩納哥",
+    "countryEn": "Monaco",
+    "status": "equal",
+    "color": "#43A050",
+    "description": "完全平等互惠之國家 Equal and reciprocal countries",
+    "flag": "🇲🇨",
+    "updated": "2026-08-14"
+  },
+  "MAC": {
+    "countryZh": "澳門",
+    "countryEn": "Macau",
+    "status": "none",
+    "color": "#D32F2F",
+    "description": "無平等互惠國家 Non-equal and reciprocal countries",
+    "flag": "🇲🇴",
+    "updated": "2026-08-14"
+  }
+}

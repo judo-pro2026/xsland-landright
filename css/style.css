@@ -1,0 +1,197 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex !important;
+    flex-direction: row !important;
+
+    width: 100% !important;
+    height: 100vh !important;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+/* 左側 */
+#sidebar {
+    flex: 0 0 340px;
+
+    width: 340px;
+    height: 100vh;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+}
+
+/* 右側地圖 */
+#map {
+    flex: 1 1 auto;
+
+    width: auto;
+    height: 100vh;
+
+    min-width: 0;
+    min-height: 0;
+
+    box-sizing: border-box;
+}
+
+.sidebar-header{
+    padding:24px;
+    background:#1f4e79;
+    color:white;
+}
+
+.country-card{
+    padding:20px;
+}
+
+.flag{
+    font-size:48px;
+    text-align:center;
+    margin:20px 0;
+}
+
+.status{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:20px;
+    background:#eee;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+.update{
+    margin-top:20px;
+    color:#666;
+    font-size:14px;
+}
+
+.search-box{
+
+    margin-top:20px;
+
+    position:relative;
+
+}
+
+.search-box input{
+
+    width: 100%;
+    height: 42px;
+    padding: 0 14px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    outline: none;
+
+}
+
+.search-box input:focus {
+    box-shadow: 0 0 0 3px rgba(255,255,255,.3);
+}
+
+#searchResult {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 48px;
+
+    background: white;
+    color: #222;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.2);
+
+    max-height: 300px;
+
+    overflow-y: auto;
+
+    display: none;
+
+    z-index: 9999;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    cursor: pointer;
+
+    transition:
+        background .15s ease;
+}
+
+.search-item:hover,
+.search-item.selected {
+    background: #f0f3f5;
+}
+
+.search-flag {
+    font-size: 24px;
+}
+
+.search-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-name strong {
+    font-size: 14px;
+}
+
+.search-name small {
+    color: #777;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+/* 新加坡世界尺度點擊熱區：透明、不遮住地圖，只增加滑鼠/觸控命中範圍。 */
+.singapore-hit-area {
+    background: transparent;
+    border: 0;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.singapore-hit-area::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+/* 面積極小、容易被鄰國圖層蓋住的國家（安道爾、摩納哥、聖馬利諾……）
+   做法與新加坡熱區相同：透明可點擊區域，不影響地圖原本外觀。 */
+.micro-state-hit-area {
+    background: transparent;
+    border: 0;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.micro-state-hit-area::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent;
+}
