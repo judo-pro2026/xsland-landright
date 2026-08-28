@@ -77,6 +77,12 @@ body {
     font-size:14px;
 }
 
+#countryDescription{
+    white-space: pre-line;
+    line-height: 1.7;
+    margin-top: 14px;
+}
+
 .search-box{
 
     margin-top:20px;
