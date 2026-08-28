@@ -28,7 +28,10 @@ body {
 
     box-sizing: border-box;
 
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
 
     background: #ffffff;
 }
@@ -47,13 +50,35 @@ body {
 }
 
 .sidebar-header{
-    padding:24px;
+    flex: 0 0 auto;
+
+    padding: 14px 20px;
     background:#1f4e79;
     color:white;
 }
 
+.sidebar-header h3{
+    margin: 0 0 6px;
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.sidebar-header p{
+    margin: 4px 0;
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: .9;
+}
+
 .country-card{
+    flex: 1 1 auto;
+
     padding:20px;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .flag{
@@ -81,11 +106,14 @@ body {
     white-space: pre-line;
     line-height: 1.7;
     margin-top: 14px;
+
+    flex: 1 1 auto;
+    overflow-y: auto;
 }
 
 .search-box{
 
-    margin-top:20px;
+    margin-top:10px;
 
     position:relative;
 
