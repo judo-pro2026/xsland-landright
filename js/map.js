@@ -13,12 +13,27 @@ const stateLayers = {};
 const stateCountryLayers = {};
 
 function createMap() {
-    map = L.map("map").setView([20, 0], 2);
+    // 限制地圖只能在真實世界地理範圍內拖曳/縮放，
+    // 避免使用者把地圖拉到「複製世界」的空白重複區域（那裡沒有國家圖層資料，點了也沒反應）。
+    const worldBounds = L.latLngBounds([-85, -180], [85, 180]);
 
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "&copy; OpenStreetMap contributors",
-        maxZoom: 19
-    }).addTo(map);
+    map = L.map("map", {
+        center: [20, 0],
+        zoom: 2,
+        minZoom: 2,
+        maxBounds: worldBounds,
+        maxBoundsViscosity: 1.0,
+        worldCopyJump: false
+    });
+
+    // 標準 OpenStreetMap (OSM) 風格最標準的開源地圖，色彩較豐富。
+ 
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "&copy; <a href='https://openstreetmap.org'>OpenStreetMap</a> contributors",
+    maxZoom: 19,
+    noWrap: true
+}).addTo(map);
+
 }
 
 function getStatusConfig(status) {
@@ -41,11 +56,24 @@ function getCountryStyle(feature) {
     // 依州/邦別判定的國家（見 config.js 的 STATE_BASED_COUNTRIES）：
     // 這裡的整塊國界只負責當底色，不參與點擊/hover，互動完全交給州/邦圖層。
     if (isStateBasedCountry(code)) {
+        // 這塊國界底色刻意設為完全透明（fillOpacity: 0）。
+        // 原因：像美國這種「依州/邦別判定」的國家，真正的顏色是由
+        // createAllStatesLayers() 疊加的州界圖層負責的，而美國的州界
+        // GeoJSON（us-states.json）是沿海岸線畫的，不包含美加邊境
+        // 五大湖（Lake Michigan、Lake Superior、Lake Huron、Lake Erie、
+        // Lake Ontario）在美國境內的水域部分。
+        // 但 world.geojson 的國界（這裡用來畫底圖）是沿實際國境線畫的，
+        // 涵蓋了湖泊在美國境內的那一半。
+        // 如果這裡的底色維持不透明，五大湖裡「州界圖層沒蓋到」的那塊
+        // 水域，就會透出底色（status.color，預設是「無平等互惠」的紅色），
+        // 看起來像是湖泊整塊被染紅、州界又沒把它蓋掉。
+        // 把底色設為透明，湖泊就會維持底圖原本的水域顏色，
+        // 只留下細灰色國界線（含穿越湖面的美加邊境線）。
         return {
             color: "#555",
             weight: 1,
             fillColor: status.color,
-            fillOpacity: 0.6,
+            fillOpacity: 0,
             interactive: false
         };
     }
@@ -149,9 +177,11 @@ function createGeoJson() {
         onEachFeature
     }).addTo(map);
 
-    if (geojson.getLayers().length > 0) {
-        map.fitBounds(geojson.getBounds());
-    }
+    // 註：這裡刻意不再呼叫 map.fitBounds(geojson.getBounds())。
+    // world.geojson 裡有國家（美國本土+阿拉斯加、俄羅斯、斐濟等）的多邊形橫跨東西 180 度經線，
+    // Leaflet 的 getBounds() 無法正確處理跨日期變更線的座標，算出來的範圍會異常巨大，
+    // 導致地圖載入時對齊到奇怪的位置、又因為 maxBounds 限制被拉回來，造成畫面「跳兩次」。
+    // 初始視角已經在 createMap() 用固定座標設定好，這裡不需要也不應該再定位一次。
 }
 
 function getSingaporeStyle() {
@@ -239,13 +269,33 @@ function createMicroStateHitAreas() {
     if (typeof MICRO_STATES === "undefined") return;
 
     MICRO_STATES.forEach(code => {
-        const layer = countryLayers[code];
+        const dashIndex = code.indexOf("-");
+        const isSubState = dashIndex > 0;
+
+        // 「國碼-州碼」格式（例如 USA-DC）：查州/邦圖層；一般國家：查國家圖層。
+        const layer = isSubState ? stateLayers[code] : countryLayers[code];
         if (!layer) {
-            console.warn(`找不到微型國家圖層，略過熱區建立：${code}`);
+            console.warn(`找不到微型國家/州圖層，略過熱區建立：${code}`);
             return;
         }
 
         const center = layer.getBounds().getCenter();
+
+        let label;
+        let resetStyleFn;
+
+        if (isSubState) {
+            const countryCode = code.slice(0, dashIndex);
+            const stateCode = code.slice(dashIndex + 1);
+            const info = getStateInfo(countryCode, stateCode);
+            const stateConfig = STATE_BASED_COUNTRIES[countryCode] || {};
+            const displayName = info?.stateZh || info?.nameZh || layer.feature?.properties?.stateZh || stateCode;
+            label = `${stateConfig.flag || "🌍"} ${displayName}`;
+            resetStyleFn = () => resetHighlight({ target: layer });
+        } else {
+            label = getCountryLabel(layer.feature);
+            resetStyleFn = () => geojson.resetStyle(layer);
+        }
 
         const hitLayer = L.marker(center, {
             interactive: true,
@@ -259,7 +309,7 @@ function createMicroStateHitAreas() {
             })
         }).addTo(map);
 
-        hitLayer.bindTooltip(getCountryLabel(layer.feature), {
+        hitLayer.bindTooltip(label, {
             direction: "top",
             offset: [0, -10]
         });
@@ -273,9 +323,7 @@ function createMicroStateHitAreas() {
             layer.bringToFront();
         });
 
-        hitLayer.on("mouseout", () => {
-            geojson.resetStyle(layer);
-        });
+        hitLayer.on("mouseout", resetStyleFn);
 
         microStateHitLayers[code] = hitLayer;
     });
@@ -320,7 +368,26 @@ function createStatesLayer(countryCode) {
     const geoData = stateGeoData[countryCode];
     if (!geoData) return;
 
+    const config = STATE_BASED_COUNTRIES[countryCode];
+
     const layer = L.geoJSON(geoData, {
+        // 有些州/邦界 GeoJSON 來源，除了真正的州/邦之外，
+        // 還會多包一些跟該國「同層級但不是州/邦」的區域
+        // （例如美國的 us-states.json 除了 50 州 + DC，
+        // 通常還會多一筆「Puerto Rico」波多黎各——它是美國的自治邦，
+        // 不是州，也不在 nameToCode 對照表裡）。
+        // 這種多餘 feature 如果沒濾掉，會被畫在世界地圖上
+        // 對應國家（PRI）圖層的正上方，因為找不到州別資料，
+        // 顏色/名稱/說明會全部 fallback 成預設值（紅色、原文地名、空白說明），
+        // 把底下原本正確設定好的國家圖層蓋住。
+        // 這裡用 filter 只保留 nameToCode 裡「真的是這個國家的州/邦」的 feature。
+        filter(feature) {
+            if (!config || !config.nameToCode) return true;
+            return Object.prototype.hasOwnProperty.call(
+                config.nameToCode,
+                feature.properties?.name
+            );
+        },
         style: getStateStyle(countryCode),
         onEachFeature(feature, lyr) {
             const code = resolveStateCode(countryCode, feature.properties, feature);

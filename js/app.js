@@ -6,8 +6,8 @@ async function init() {
 
     createGeoJson();
     createSingaporeLayer();
-    createMicroStateHitAreas();
     createAllStatesLayers();
+    createMicroStateHitAreas();
     initSearch();
 }
 

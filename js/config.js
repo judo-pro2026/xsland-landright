@@ -3,12 +3,12 @@ const HOME_COUNTRY = "TWN";
 
 const STATUS_CONFIG = {
     equal: {
-        text: "完全平等互惠國家",
+        text: "完全平等互惠國家 Equal and reciprocal countries",
         color: "#43A050"
     },
 
     conditional: {
-        text: "附條件平等互惠國家",
+        text: "附條件平等互惠國家 Conditional equal and reciprocal country",
         color: "#F2B84B"
     },
 
@@ -23,7 +23,7 @@ const STATUS_CONFIG = {
     },
 
     none: {
-        text: "無平等互惠國家",
+        text: "無平等互惠國家 Non-equal and reciprocal countries",
         color: "#D32F2F"
     },
 
@@ -35,11 +35,12 @@ const STATUS_CONFIG = {
 
 // ==========================================
 // 世界尺度下面積極小、容易被鄰國圖層蓋住而點不到的國家。
-// 這些國家會額外疊加一個透明的「點擊熱區」（做法比照新加坡），
-// 不影響原本地圖上的顏色顯示，只負責讓滑鼠/觸控更容易點到。
-// 新增國家時只要把 ISO3 代碼加進這個陣列即可，不需要改其他程式。
+// 這些國家（或「國碼-州碼」格式的迷你州/特區，例如 USA-DC）會額外疊加一個
+// 透明的「點擊熱區」（做法比照新加坡），不影響原本地圖上的顏色顯示，
+// 只負責讓滑鼠/觸控更容易點到。新增項目時只要把代碼加進這個陣列即可，
+// 不需要改其他程式。
 // ==========================================
-const MICRO_STATES = ["AND", "MCO", "SMR"];
+const MICRO_STATES = ["AND", "MCO", "SMR", "USA-DC"];
 
 // ==========================================
 // 依「州/邦別」判定的國家設定
@@ -54,10 +55,12 @@ const STATE_BASED_COUNTRIES = {
         countryZh: "美國",
         countryEn: "United States",
         // 美國 50 州 + DC 界線 GeoJSON
-        geojsonUrl: "https://gist.githubusercontent.com/wboykinm/6979292/raw/us-states.geojson",
+        // 原本的 wboykinm 版本沿用自 D3 範例資料，先天沒有收錄華盛頓特區(DC)這塊形狀，
+        // 換成 PublicaMundi/MappingAPI 這份有包含 DC 的版本（結構相同，皆用 properties.name）。
+        geojsonUrl: "https://raw.githubusercontent.com/PublicaMundi/MappingAPI/master/data/geojson/us-states.json",
         // GeoJSON 的 properties.name（英文全名）→ countries.json 裡 states 的 key
         nameToCode: {
-            Alabama: "AL", Alaska: "AK", Arizona: "AZ", Arkansas: "AR", California: "CA", Colorado: "CO", Connecticut: "CT", Delaware: "DE", Florida: "FL", Georgia: "GA", Hawaii: "HI", Idaho: "ID", Illinois: "IL", Indiana: "IN", Iowa: "IA", Kansas: "KS", Kentucky: "KY", Louisiana: "LA", Maine: "ME", Maryland: "MD", Massachusetts: "MA", Michigan: "MI", Minnesota: "MN", Mississippi: "MS", Missouri: "MO", Montana: "MT", Nebraska: "NE", Nevada: "NV", "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", Ohio: "OH", Oklahoma: "OK", Oregon: "OR", Pennsylvania: "PA", "Rhode Island": "RI", "South Carolina": "SC", "South Dakota": "SD", Tennessee: "TN", Texas: "TX", Utah: "UT", Vermont: "VT", Virginia: "VA", Washington: "WA", "West Virginia": "WV", Wisconsin: "WI", Wyoming: "WY"
+            Alabama: "AL", Alaska: "AK", Arizona: "AZ", Arkansas: "AR", California: "CA", Colorado: "CO", Connecticut: "CT", Delaware: "DE", "District of Columbia": "DC", Florida: "FL", Georgia: "GA", Hawaii: "HI", Idaho: "ID", Illinois: "IL", Indiana: "IN", Iowa: "IA", Kansas: "KS", Kentucky: "KY", Louisiana: "LA", Maine: "ME", Maryland: "MD", Massachusetts: "MA", Michigan: "MI", Minnesota: "MN", Mississippi: "MS", Missouri: "MO", Montana: "MT", Nebraska: "NE", Nevada: "NV", "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", Ohio: "OH", Oklahoma: "OK", Oregon: "OR", Pennsylvania: "PA", "Rhode Island": "RI", "South Carolina": "SC", "South Dakota": "SD", Tennessee: "TN", Texas: "TX", Utah: "UT", Vermont: "VT", Virginia: "VA", Washington: "WA", "West Virginia": "WV", Wisconsin: "WI", Wyoming: "WY"
         }
     },
 
